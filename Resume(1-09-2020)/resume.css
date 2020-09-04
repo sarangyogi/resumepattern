@@ -1,0 +1,147 @@
+/*to reset every thing So that everything is in our hand*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-top: 2px solid #bfc3be;
+    border-bottom: 2px solid #bfc3be;
+    padding: 0.75rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgba(27, 26, 26, 0.829);
+    margin-bottom: 1rem;
+}
+em{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: salmon;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #aa6363;
+}
+a:hover {
+    color: salmon;
+    text-decoration: none;
+}
+p{
+    line-height: 1.5;
+}
+ul{
+    list-style: none;
+}
+body{
+    padding: 3rem 4rem;
+    background-color: gray;
+    background: linear-gradient(#8c928a8c 50%,#fa80728c 50%);
+}
+section + section{   /*To give space between two sections*/
+    margin-top: 2rem;
+}
+.column2{   /*For keeping 2nd column on top*/
+    margin: 0px;
+}
+.profile{
+    text-align: center;
+}
+.profile img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.profile p{
+    color: rgb(170, 99, 99);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+.contact ul{
+    margin-top: -1rem;/* this is used for taking space below contact*/
+}
+.contact li{
+    text-align: right;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    color: rgb(170, 99, 99);
+}
+.contact > ul i{
+    padding-left: 15%;
+}
+.social li{
+    text-align: center;
+    padding: 1rem;
+}
+.social > ul i{
+    padding-left: 15%;
+}
+.skills > ul{   /*It makes the column= no.of lists in ul*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.skills ul{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.skills li ul{
+    text-align: left;
+}
+.duration{
+    padding-top: 1rem;
+}
+.event{   
+    display: grid;
+    grid-template-columns: 5ch 1fr;
+    grid-gap: 1rem;
+}
+.content{
+    border-left: 1px solid black;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+.timeline .event + .event{  /*gives space betn two timelines*/
+    padding-top: 2rem;
+}
+.content p{
+    margin-bottom: 1rem;
+}
+i{
+    font-size: 3rem;
+    color:#aa6363;
+    float: left;
+}
+#resm{
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    grid-gap: 3rem;
+    background-color: white;
+    padding: 2rem;
+}
+@media (max-width:700px){
+    body{
+        padding: 2.5rem;
+    }
+    #resm{
+        display: block;
+        background-color: rgb(255, 255, 255);
+        padding: 2rem;
+    }
+}
