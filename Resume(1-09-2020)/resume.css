@@ -76,7 +76,10 @@ section + section{   /*To give space between two sections*/
     margin-top: -1rem;/* this is used for taking space below contact*/
 }
 .contact li{
-    text-align: right;
+    /* text-align: right; */
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
     text-transform: uppercase;
     padding: 1rem;
     border-bottom: 1px solid black;
